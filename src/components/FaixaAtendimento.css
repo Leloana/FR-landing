@@ -1,0 +1,33 @@
+.faixa-atendimento {
+  width: 100%;
+  background-color: var(--cor--texto--secundaria);
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.faixa-atendimento a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  display: inline-block; /* ESSENCIAL para o transform funcionar */
+}
+
+
+.faixa-atendimento a:hover {
+  
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .faixa-atendimento {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}

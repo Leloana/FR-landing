@@ -1,0 +1,97 @@
+.footer {
+  background-color: var(--cor--footer);
+  color: var(--cor--texto);
+  padding: 2rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Cada coluna */
+.footer-coluna {
+  flex: 1;
+  min-width: 220px;
+  padding: 0 1rem;
+  border-left: 1px solid #ccc;
+}
+
+/* Remove borda da primeira */
+.footer-coluna:first-child {
+  border-left: none;
+}
+
+.footer-logo-bloco {
+  display: flex;      
+  justify-content: center; 
+  height: 100%;
+}
+
+
+.footer-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.footer-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--cor--fundo);
+}
+
+.footer-info a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.footer-info a:hover {
+  color: var(--cor--hover);
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1.5rem;
+  
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-coluna {
+    border: none;
+    padding: 0;
+  }
+
+  .footer-info {
+    align-items: center;
+  }
+}

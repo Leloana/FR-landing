@@ -1,0 +1,44 @@
+.botao-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25d366;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.botao-whatsapp:hover {
+  background-color: #1ebc59;
+  transform: scale(1.05);
+}
+
+.icone-whatsapp {
+  font-size: 1.25rem;
+}
+
+/* Quando for só o ícone */
+.icone-apenas {
+  padding: 0.75rem;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+}
+
+/* Responsivo opcional */
+@media (max-width: 768px) {
+  .botao-whatsapp {
+    font-size: 0.95rem;
+    padding: 0.65rem 1.25rem;
+  }
+
+  .icone-apenas {
+    width: 44px;
+    height: 44px;
+  }
+}

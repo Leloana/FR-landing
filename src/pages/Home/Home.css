@@ -1,0 +1,12 @@
+.main-content {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--cor--fundo);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1.5rem 1.25rem;
+  }
+}

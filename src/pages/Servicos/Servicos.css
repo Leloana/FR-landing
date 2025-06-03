@@ -1,0 +1,49 @@
+.pagina-servico {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.servico-index {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.servico-index ul {
+  list-style: none;
+  padding: 0;
+}
+
+.servico-index li {
+  margin-bottom: 0.5rem;
+}
+
+.servico-index a {
+  text-decoration: none;
+  color: var(--cor--principal);
+  font-weight: 500;
+}
+
+.servico-index a:hover {
+  color: var(--cor--hover);
+}
+
+.servico-conteudo {
+  flex: 3;
+  min-width: 300px;
+  max-width: 60%;
+}
+
+.servico-conteudo h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.servico-conteudo p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-family: Raleway;
+  line-height: 1.6;
+}

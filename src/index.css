@@ -1,0 +1,54 @@
+@import url('./styles/variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200@400;500;600;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--cor--fundo);
+  color: var(--cor--texto);
+  line-height: 1.6;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--cor--texto);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--cor--principal);
+  transition: color 0.2s;
+}
+
+
+/* Botões genéricos */
+button {
+  background-color: var(--cor--principal);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--cor--hover);
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

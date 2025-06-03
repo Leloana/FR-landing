@@ -1,0 +1,67 @@
+@import url('../../../styles/variables.css');
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.info-texto {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* ⬅️ use 'center' para centralizar horizontalmente */
+  text-align: left; /* ou 'center' se quiser tudo no centro */
+  gap: 1rem;
+}
+
+.texto-principal {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor--texto);
+  max-width: 600px;
+}
+
+.texto-complementar {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--cor--texto);
+  max-width: 600px;
+}
+
+.info-imagem {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  padding-right: 60px;
+}
+
+.info-imagem img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .info-texto {
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-principal {
+    font-size: 1.5rem;
+  }
+
+  .texto-complementar {
+    font-size: 0.95rem;
+  }
+  
+}
