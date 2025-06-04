@@ -6,6 +6,7 @@ import BotaoWhatsapp from '../../components/BotaoWhatsapp';
 
 export default function EquipeUnico() {
   const { pessoaId } = useParams(); // Obtém o ID da pessoa via URL
+  console.log(pessoaId);
   const pessoa = funcionarios.find(p => p.id === pessoaId); // Encontra o membro da equipe com base no ID
 
   if (!pessoa) {
