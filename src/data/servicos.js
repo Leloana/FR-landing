@@ -1,12 +1,11 @@
 export const servicos = [
   {
     id: 'aposentadoria',
-    titulo: 'Aposentadorias',
+    titulo: 'Aposentadoria',
     descricao: 'Depois de muita luta, o trabalhador tem direito a uma vida digna. Nós vamos te dar as orientações, fazer todos os cálculos e te apresentar as opções para que você garanta o melhor benefício.',
     detalhes: `A aposentadoria é um direito fundamental conquistado com anos de trabalho, dedicação e contribuição. Nosso compromisso é garantir que você tenha acesso ao melhor benefício possível, com total clareza sobre suas opções e segurança no processo.
 
   Com experiência em diversas modalidades de aposentadoria — por idade, tempo de contribuição, especial, por invalidez e regras de transição — realizamos todos os cálculos previdenciários e apresentamos o melhor caminho para a sua realidade.
-
   🔹 Simulação e planejamento de aposentadoria  
   🔹 Revisão de benefícios já concedidos  
   🔹 Atendimento especializado em regras de transição da Reforma da Previdência  

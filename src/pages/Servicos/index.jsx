@@ -39,6 +39,7 @@ export default function PaginaServicos() {
 
       <main className="servico-conteudo">
         <BotaoWhatsapp texto={servico.textowhats} mensagem={servico.mensagem} />
+        <div class="frase-efeito">Temos a expertise que precisa</div>
         <h1>{servico.titulo}</h1>
             <p>{servico.descricao}</p>
             {servico.detalhes && (

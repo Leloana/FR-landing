@@ -51,9 +51,9 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .info-texto {
+  .info-texto{
     align-items: center;
-    text-align: center;
+    text-align: justify;
   }
 
   .texto-principal {
@@ -61,7 +61,16 @@
   }
 
   .texto-complementar {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
-  
+
+  .info-imagem {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .info-imagem img {
+    max-width: 100%; /* aumenta o uso da largura no mobile */
+  }
 }
+

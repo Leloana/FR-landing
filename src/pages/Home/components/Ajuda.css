@@ -2,7 +2,6 @@
 
 .ajuda {
   padding: 6rem;
-  text-align: left;
   background-color: var(--cor--componentes);
 }
 
@@ -11,7 +10,6 @@
   font-size: 1.8rem;
   font-weight: 200;
   margin-bottom: 2rem;
-  text-align: left;
 }
 
 .ajuda-grid {
@@ -19,6 +17,7 @@
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1.5rem;
   justify-items: center;
+  
 }
 
 .ajuda-item {
@@ -30,7 +29,6 @@
   color: var(--cor--texto--secun);
   transition: transform 0.2s;
   cursor: pointer;
-  text-align: center;
 }
 
 .ajuda-item:hover {

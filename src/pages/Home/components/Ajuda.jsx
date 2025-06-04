@@ -15,9 +15,9 @@ export default function Ajuda() {
     return (
     <section className="ajuda">
         <h2>Nós podemos te ajudar com:</h2>
-        <div className="ajuda-grid">
+        <div className="ajuda-grid" >
         {opcoes.map((item, index) => (
-            <Link to={`/servico/${item.id}`} key={index} className="ajuda-item">
+            <Link to={`/servico/${item.id}`} key={index} className="ajuda-item" >
             <div className="icone">{item.icone}</div>
             <span>{item.texto}</span>
             </Link>

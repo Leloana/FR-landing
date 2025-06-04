@@ -1,0 +1,54 @@
+.equipe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.equipe-descricao {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .equipe-descricao {
+    font-size: 1.25rem;
+  }
+
+  .equipe-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.equipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.equipe-card:hover {
+  opacity: 0.9;
+}
+
+.equipe-imagem {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-nome {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}

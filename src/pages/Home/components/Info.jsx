@@ -6,16 +6,19 @@ export default function Info() {
   return (
     <section className="info">
       <div className="info-texto">
-        <h2 className="texto-principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quos ipsa voluptatibus distinctio numquam quis dolore! Magni esse similique sequi ea incidunt. Enim eius cum repellendus, rem quaerat fugit minus?</h2>
-        <p className="texto-complementar">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore distinctio suscipit ipsa nostrum, iure cum nemo id consequuntur possimus eius dicta tempora perspiciatis illum totam, minima quo ipsam architecto? Alias.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quibusdam et excepturi ducimus dolorum culpa delectus esse 
-        </p>
         <BotaoWhatsapp 
-            texto="Fale Conosco!"
+            texto="Consultoria por Whatsapp"
             mensagem="Olá, preciso de ajuda com meu atendimento!"
             numero="5514998689481"
-            />
+        />
+        <h2 className="texto-principal">
+          Mais de 20 anos oferecendo segurança jurídica para quem precisa.
+        </h2>
+        <p className="texto-complementar">
+          Atuamos desde 2002 com compromisso, ética e excelência na defesa dos direitos de trabalhadores, aposentados e pessoas em situação de vulnerabilidade. Nossa missão é tornar o processo jurídico mais claro, rápido e acessível para todos.
+          <br /><br />
+          Conte com nossa equipe especializada para orientar você nas questões previdenciárias mais importantes da sua vida. Agende uma consultoria gratuita e descubra como podemos te ajudar.
+        </p>
       </div>
       <div className="info-imagem">
         <img src={imagemEmpresa} alt="Imagem da empresa" />
