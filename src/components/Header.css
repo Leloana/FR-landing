@@ -11,13 +11,6 @@
   flex-wrap: wrap;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--cor--principal);
-  flex-shrink: 0;
-}
-
 .logo-img {
   height: 70px;
   width: auto;
@@ -29,28 +22,47 @@
   flex-wrap: wrap;
 }
 
-/* Responsividade para telas menores */
+/* Botão de menu (hamburguer) - escondido no desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--cor--texto-secundario);
+}
+
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 1.5rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  .nav-links a {
-    width: 100%;
-    display: block;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem; /* Header mais fina e compacta */
   }
 
   .logo-img {
-    height: 32px; /* reduz a altura no mobile */
+    height: 45px; /* Logo menor no mobile */
+    width: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    margin-left: auto; /* empurra o botão para o canto direito */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    display: none;
+    z-index: 99;
+  }
+
+  .nav-links.ativo {
+    display: flex;
   }
 }
+
