@@ -1,5 +1,5 @@
 @import url('./styles/variables.css');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
 /* Reset básico */
 * {
@@ -10,7 +10,6 @@
 
 /* Corpo da página */
 body {
-  font-family: 'Raleway', sans-serif;
   background-color: var(--cor--fundo);
   color: var(--cor--texto);
   line-height: 1.6;

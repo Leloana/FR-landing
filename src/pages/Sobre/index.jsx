@@ -5,8 +5,8 @@ export default function Sobre() {
   return (
     <section className="sobre">
       <div className="sobre-texto">
-        <h1>Uma breve história</h1>
-        <h2>advogando desde 2002</h2>
+        <h1>Uma breve História</h1>
+        <h2>Desde 2002</h2>
         <p>
           Fundado em 2002, nosso escritório tem sua raiz em Taquarituba/SP. Aqui, nossa equipe se dedica a atender diversas áreas do direito, com especial destaque para o Direito Previdenciário.
 

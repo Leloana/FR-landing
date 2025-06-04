@@ -1,0 +1,93 @@
+.oque-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--cor--fundo);
+  padding: 2rem 1.5rem;
+}
+
+.oque-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.oque-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.oque-item {
+  position: relative; /* Para permitir o posicionamento absoluto do destaque */
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  background-color: var(--cor--componentes);
+  transition: box-shadow 0.3s ease;
+}
+
+.oque-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.oque-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oque-icone {
+  font-size: 2rem;
+  color: #2a2a2a;
+}
+
+.oque-icone-whats {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+.oque-nome {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.oque-destaque {
+ position: absolute;
+  top: -15px;
+  left: -15px;
+  background-color: #ba1b1b;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  z-index: 10; /* Garante que o destaque fique acima do conteúdo */
+  font-family: Raleway;
+}
+
+.oque-linha {
+  margin: 1rem 0;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.oque-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.oque-lista li {
+  margin-bottom: 0.5rem;
+}
+

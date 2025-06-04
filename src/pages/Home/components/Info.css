@@ -21,17 +21,19 @@
 }
 
 .texto-principal {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--cor--texto);
   max-width: 600px;
+  text-align: center;
 }
 
 .texto-complementar {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-family: Raleway;
   color: var(--cor--texto);
   max-width: 600px;
+  font-size: 1.4rem;
+  text-align: justify;
 }
 
 .info-imagem {
@@ -70,7 +72,7 @@
   }
 
   .info-imagem img {
-    max-width: 100%; /* aumenta o uso da largura no mobile */
+    max-width: 100%; 
   }
 }
 

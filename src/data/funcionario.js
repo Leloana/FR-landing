@@ -1,17 +1,23 @@
 export const funcionarios = [
   {
-    id: 'joao-silva',
-    nome: 'João Silva',
-    caminhoFoto: '/imagens/aninha.jpg'
+    id: 'ana-carolina',
+    nome: 'Ana Carolina',
+    caminhoFoto: '/imagens/aninha.jpg',
+    frase: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius quae aperiam veniam dolor et voluptatem, ducimus, est vero ipsamiste! Non alias in dolorem vitae doloribus esse, velit officiis?',
+    academico: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius quae aperiam veniam dolor et voluptatem, ducimus, est vero ipsamiste! Non alias in dolorem vitae doloribus esse, velit officiis?'
   },
   {
-    id: 'maria-oliveira',
-    nome: 'Maria Oliveira',
-    caminhoFoto: '/imagens/bigui.jpg'
+    id: 'gabriela',
+    nome: 'Gabriela',
+    caminhoFoto: '/imagens/bigui.jpg',
+    frase: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius quae aperiam veniam dolor et voluptatem, ducimus, est vero ipsamiste! Non alias in dolorem vitae doloribus esse, velit officiis?',
+    academico: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius quae aperiam veniam dolor et voluptatem, ducimus, est vero ipsamiste! Non alias in dolorem vitae doloribus esse, velit officiis?'
   },
   {
-    id: 'ana-souza',
-    nome: 'Ana Souza',
-    caminhoFoto: '/imagens/sandra.jpg'
-  },
+    id: 'sandra',
+    nome: 'Sandra',
+    caminhoFoto: '/imagens/sandra.jpg',
+    frase: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius quae aperiam veniam dolor et voluptatem, ducimus, est vero ipsamiste! Non alias in dolorem vitae doloribus esse, velit officiis?',
+    academico: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius quae aperiam veniam dolor et voluptatem, ducimus, est vero ipsamiste! Non alias in dolorem vitae doloribus esse, velit officiis?'
+  }
 ];

@@ -24,11 +24,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--cor--texto--secun);
   transition: transform 0.2s;
   cursor: pointer;
+  font-family: Raleway;
 }
 
 .ajuda-item:hover {
@@ -38,7 +40,6 @@
 
 .icone {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
   color: var(--cor--principal);
 }
 

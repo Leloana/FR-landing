@@ -53,7 +53,7 @@ export default function Footer() {
     </div>
 
     <div className="footer-copy">
-        © {new Date().getFullYear()} Ferreira & Ramos Advogados. Todos os direitos reservados.
+        © {new Date().getFullYear()} Ferreira & Ramos Advocacia e Consultoria. Todos os direitos reservados.
     </div>
     </footer>
   )

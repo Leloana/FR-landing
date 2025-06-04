@@ -1,0 +1,71 @@
+.equipe-unico-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background-color: var(--cor--fundo--secundario);
+}
+
+.equipe-unico-container h1{
+    font-family: Raleway;
+    padding-bottom: 1rem;
+    font-size: 2.4rem;
+    color: var(--cor--principal);
+}
+
+.equipe-unico-info {
+    margin-bottom: 2rem;
+}
+
+.equipe-unico-foto img {
+  margin-bottom: 1.5rem;
+  width: 340px;
+  height: 340px;
+  border-radius: 5%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.equipe-unico-frase {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--cor--texto--secundaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.icone-frase {
+  font-size: 5rem;
+  color: var(--cor--principal);
+  margin-right: 1rem;
+}
+
+.equipe-unico-academico {
+  font-size: 1.3rem;
+  color: var(--cor--texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.icone-academico {
+  font-size: 5rem;
+  color: var(--vermelho--advogado);
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .equipe-unico-frase,
+  .equipe-unico-academico {
+    flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+  }
+
+  .icone-frase,
+  .icone-academico {
+    margin-right: 0; /* Remove o espaço extra quando o ícone estiver acima */
+    margin-bottom: 0.5rem; /* Adiciona um pequeno espaço entre o ícone e o texto */
+  }
+}

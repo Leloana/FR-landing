@@ -4,8 +4,9 @@ import { funcionarios } from '../../data/funcionario';
 export default function Equipe() {
   return (
     <div className="equipe-container">
+      <h1>Ferreira&Ramos</h1>
       <p className="equipe-descricao">
-        Nossos advogados são altamente qualificados e acessíveis. Nosso tamanho permite que nossos sócios deem atenção pessoal a cada caso.
+        Nossos advogados são  <strong>altamente qualificados e acessíveis</strong> . Nosso tamanho permite que nossos sócios deem atenção pessoal a cada caso.
       </p>
 
       <div className="equipe-grid">
