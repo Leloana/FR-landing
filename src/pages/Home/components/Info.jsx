@@ -7,8 +7,8 @@ export default function Info() {
     <section className="info">
       <div className="info-texto">
         <BotaoWhatsapp 
-            texto="Consultoria por Whatsapp"
-            mensagem="Olá, preciso de ajuda com meu atendimento!"
+            texto="Clique aqui para atendimento"
+            mensagem="Olá, gostaria de saber mais sobre benefícios previdenciários."
             numero="5514998689481"
         />
         <h2 className="texto-principal">

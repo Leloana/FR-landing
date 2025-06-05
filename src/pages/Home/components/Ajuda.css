@@ -1,8 +1,5 @@
-@import url('../../../styles/variables.css');
-
 .ajuda {
   padding: 6rem;
-  background-color: var(--cor--componentes);
 }
 
 .ajuda h2 {
@@ -14,23 +11,32 @@
 
 .ajuda-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste para garantir que cada item seja um quadrado */
   gap: 1.5rem;
   justify-items: center;
-  
+  margin-top: 2rem;
 }
 
 .ajuda-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   font-weight: 600;
   font-size: 1.5rem;
-  color: var(--cor--texto--secun);
+  color: var(--cor--texto--secundaria);
   transition: transform 0.2s;
   cursor: pointer;
   font-family: Raleway;
+  background-color: var(--cor--componentes);
+  /* Adiciona bordas para criar o visual de quadrados */
+  border: 2px solid var(--cor--principal); /* Adiciona borda */
+  border-radius: 10px; /* Bordas arredondadas */
+  /* padding: 2rem; Padding interno */
+  height: 280px; /* Tamanho fixo para os itens ficarem quadrados */
+  width: 280px; /* Tamanho fixo */
+  box-sizing: border-box; /* Inclui a borda no cálculo do tamanho */
 }
 
 .ajuda-item:hover {
@@ -43,21 +49,26 @@
   color: var(--cor--principal);
 }
 
+.icone-entrar {
+  font-size: 1.5rem; /* Ajuste o tamanho do ícone */
+  color: var(--cor--principal);
+  margin-left: 10px; /* Adiciona um pequeno espaço entre o texto e o ícone */
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .ajuda {
     padding: 1.5rem 1rem;
   }
-  .ajuda-item {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
+
   .ajuda h2 {
     font-size: 1.5rem;
   }
 
   .ajuda-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: 1fr; /* Apenas 1 item por linha em dispositivos móveis */
     gap: 1rem;
   }
 
