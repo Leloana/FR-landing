@@ -1,5 +1,5 @@
 .ajuda {
-  padding: 6rem;
+  padding-bottom: 1.5rem;
 }
 
 .ajuda h2 {
@@ -14,7 +14,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste para garantir que cada item seja um quadrado */
   gap: 1.5rem;
   justify-items: center;
-  margin-top: 2rem;
+
 }
 
 .ajuda-item {
@@ -59,9 +59,6 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .ajuda {
-    padding: 1.5rem 1rem;
-  }
 
   .ajuda h2 {
     font-size: 1.5rem;
