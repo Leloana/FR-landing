@@ -6,7 +6,7 @@
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .info-texto {
@@ -53,6 +53,9 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .info {
+    padding: 1rem;
+  }
   .info-texto{
     align-items: center;
     text-align: justify;

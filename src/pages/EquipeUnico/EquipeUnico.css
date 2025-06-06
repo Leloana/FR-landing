@@ -15,12 +15,13 @@
 
 .equipe-unico-info {
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .equipe-unico-foto img {
   margin-bottom: 1.5rem;
-  width: 340px;
-  height: 340px;
+  width: 500px;
+  height: auto;
   border-radius: 5%;
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -58,6 +59,11 @@
 }
 
 @media (max-width: 768px) {
+  .equipe-unico-foto img {
+    width: 300px;
+    height: auto;
+  }
+
   .equipe-unico-frase,
   .equipe-unico-academico {
     flex-direction: column; /* Muda a direção para coluna em telas pequenas */
@@ -65,6 +71,7 @@
 
   .icone-frase,
   .icone-academico {
+    font-size: 3rem;
     margin-right: 0; /* Remove o espaço extra quando o ícone estiver acima */
     margin-bottom: 0.5rem; /* Adiciona um pequeno espaço entre o ícone e o texto */
   }

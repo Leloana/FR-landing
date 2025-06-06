@@ -1,5 +1,6 @@
 .ajuda {
   padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .ajuda h2 {
@@ -59,7 +60,10 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-
+  .ajuda {
+    padding-top: 0;
+  }
+  
   .ajuda h2 {
     font-size: 1.5rem;
   }

@@ -2,24 +2,28 @@ import { useParams } from 'react-router-dom'
 import { servicos } from '../../data/servicos'
 import BotaoWhatsapp from '../../components/BotaoWhatsapp'
 import { Link } from 'react-router-dom'
+import Destaque from './components/Destaque';  // Importando o componente Destaque
 import './Servicos.css'
 
 export default function PaginaServicos() {
   const { servicoId } = useParams()
   const servico = servicos.find(a => a.id === servicoId)
-
-  if (!servico) {
-    return <p>Servicos não encontrada.</p>
-  }
-
+  console.log(servico.caminhoFoto)
   if (!servico) {
     return <p>Serviço não encontrado.</p>
   }
 
   return (
     <div className="pagina-servico">
+      <Destaque 
+        imagem={servico.caminhoFoto} 
+        titulo={servico.titulo} 
+        descricao={servico.descricao} 
+        mensagem={servico.mensagem}
+      />
+      
       <aside className="servico-index">
-        <h3>Outras servicos</h3>
+        <h3>Outros serviços</h3>
         <ul>
             {servicos.map(s => (
                 <li key={s.id}>
@@ -38,7 +42,6 @@ export default function PaginaServicos() {
       </aside>
 
       <main className="servico-conteudo">
-        <BotaoWhatsapp texto={servico.textowhats} mensagem={servico.mensagem} />
         <div className="frase-efeito">Temos a expertise que você precisa</div>
         <h1>{servico.titulo}</h1>
             <p>{servico.descricao}</p>

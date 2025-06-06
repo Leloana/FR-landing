@@ -14,8 +14,6 @@ const icones = {
 export default function OqueFazemos() {
   return (
     <div className="oque-container">
-      <h1 className="oque-titulo">Áreas de atuação Ferreira&Ramos</h1>
-
       <div className="oque-grid">
         {subservicos.map(servico => (
           <div key={servico.id} className="oque-item">

@@ -1,14 +1,11 @@
 import './Equipe.css';
 import { funcionarios } from '../../data/funcionario';
+import logoPreto from '../../assets/logo-preto.png'
 
 export default function Equipe() {
   return (
     <div className="equipe-container">
-      <h1>Ferreira&Ramos</h1>
-      <p className="equipe-descricao">
-        Nossos advogados são  <strong>altamente qualificados e acessíveis</strong> . Nosso tamanho permite que nossos sócios deem atenção pessoal a cada caso.
-      </p>
-
+      <img src={logoPreto} alt="Logo" className="equipe-logo" />
       <div className="equipe-grid">
         {funcionarios.map((pessoa) => (
           <a
@@ -17,11 +14,11 @@ export default function Equipe() {
             className="equipe-card"
           >
             <img
-              src={pessoa.caminhoFoto}
+              src={pessoa.caminhoFoto + ".jpg"}
               alt={pessoa.nome}
               className="equipe-imagem"
             />
-            <span className="equipe-nome">{pessoa.nome}</span>
+            <span className="equipe-nome">{pessoa.nome + " - " + pessoa.funcao} </span>
           </a>
         ))}
       </div>

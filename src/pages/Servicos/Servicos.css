@@ -2,19 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
-  
+  overflow: hidden;
 }
 
 .servico-index {
   flex: 1;
   min-width: 200px;
   max-width: 250px;
+  padding: 2rem;
 }
 
 .servico-index ul {
   list-style: none;
-  padding: 0;
+  padding-top: 0;
   margin: 0;
 }
 
@@ -40,13 +40,14 @@
   flex: 3;
   min-width: 300px;
   max-width: 60%;
-
+  padding: 2rem;
 }
 
 .servico-conteudo h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding-bottom: 1rem;
   font-family: Raleway;
+  text-align: center;
 }
 
 .servico-conteudo p {
@@ -54,18 +55,17 @@
   font-size: 1.5rem;
   font-family: Raleway;
   line-height: 1.4; /* ← valor mais equilibrado */
+  text-align: justify;
 }
 .frase-efeito {
   color: var(--cor--principal);
-  padding-top: 1rem;
   font-family: Raleway;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .pagina-servico {
     flex-direction: column;
-    padding-left: 2rem;
-    
   }
 
   .servico-index {

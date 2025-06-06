@@ -2,18 +2,23 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
-  background-color: var(--cor--fundo--secundario);
+  display: flex; /* Flexbox para centralizar */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.equipe-container h1 {
-  text-align: center;
-  font-size: 2.3rem;
+.equipe-logo {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 2rem;
 }
 
 .equipe-descricao {
   font-size: 1.6rem;
   margin-bottom: 2rem;
-  text-align: left;
+  text-align: center;
 }
 
 .equipe-grid {
@@ -29,8 +34,13 @@
   text-decoration: none;
   transition: opacity 0.3s ease;
   width: 100%;
-  max-width: 200px;
   margin: 0 auto;
+  
+  /* Adiciona a borda ao redor do card */
+  border: 2px solid var(--cor--principal); /* Borda de 2px, usa a cor principal */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 1rem; /* Espaço interno ao redor do conteúdo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombrinha leve para destacar o card */
 }
 
 .equipe-card:hover {
@@ -39,9 +49,10 @@
 
 .equipe-imagem {
   width: 100%;
+  max-width: 200px;
   height: 250px;
   object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; /* Bordas arredondadas para a imagem */
 }
 
 .equipe-nome {
@@ -54,10 +65,10 @@
 @media (max-width: 768px) {
   .equipe-descricao {
     font-size: 1.3rem;
-    text-align: center;
+    text-align: justify;
   }
 
   .equipe-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* 2 colunas no mobile */
   }
 }

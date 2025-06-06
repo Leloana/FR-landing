@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import FaixaAtendimento from './components/FaixaAtendimento'
+import ScrollToTop from './components/ScrollTop'
 // Paginas 
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
@@ -16,7 +17,7 @@ import ArtigoUnico from './pages/ArtigoUnico'
 
 export default function App() {
   return (
-    <>
+    <ScrollToTop>
       <Header /> 
       <Routes>
 
@@ -32,6 +33,6 @@ export default function App() {
       </Routes>
       <FaixaAtendimento />
       <Footer />
-    </>
+     </ScrollToTop>
   )
 }

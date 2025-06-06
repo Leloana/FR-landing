@@ -8,7 +8,7 @@ export default function EquipeUnico() {
   const { pessoaId } = useParams(); // Obtém o ID da pessoa via URL
   console.log(pessoaId);
   const pessoa = funcionarios.find(p => p.id === pessoaId); // Encontra o membro da equipe com base no ID
-
+  console.log(pessoa.caminhoFoto)
   if (!pessoa) {
     console.log(pessoaId)
     return <p>Funcionário não encontrado.</p>;
@@ -18,8 +18,9 @@ export default function EquipeUnico() {
     <div className="equipe-unico-container">
       <h1>{pessoa.nome}</h1>
       <div className="equipe-unico-foto">
-        <img src={pessoa.caminhoFoto} alt={pessoa.nome} />
+        <img src={pessoa.caminhoFoto + "-full.jpg"} alt={pessoa.nome} />
       </div>
+      <BotaoWhatsapp texto = {'Falar com '+ pessoa.nome} mensagem = {'Olá, gostaria de falar com ' + pessoa.nome}/>
       
       <div className="equipe-unico-info">
 
@@ -33,7 +34,6 @@ export default function EquipeUnico() {
           <p>{pessoa.academico}</p>
         </div>
       </div>
-      <BotaoWhatsapp texto = {'Falar com '+ pessoa.nome} mensagem = {'Olá, gostaria de falar com ' + pessoa.nome}/>
     </div>
   );
 

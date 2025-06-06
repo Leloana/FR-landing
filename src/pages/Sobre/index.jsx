@@ -4,6 +4,7 @@ import sobreImg from '../../assets/fundadores.jpg' // troque para o caminho real
 export default function Sobre() {
   return (
     <section className="sobre">
+      <div className="fundo"></div>
       <div className="sobre-texto">
         <h1>Uma breve História</h1>
         <h2>Desde 2002</h2>

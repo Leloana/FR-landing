@@ -24,7 +24,7 @@ export default function Header() {
         <Link to="/" onClick={() => setMenuAberto(false)}>Home</Link>
         <Link to="/sobre" onClick={() => setMenuAberto(false)}>Sobre</Link>
         <Link to="/equipe" onClick={() => setMenuAberto(false)}>Equipe</Link>
-        <Link to="/oque-fazemos" onClick={() => setMenuAberto(false)}>O que fazemos</Link>
+        <Link to="/oque-fazemos" onClick={() => setMenuAberto(false)}>Áreas de Atuação</Link>
         <Link to="/artigos" onClick={() => setMenuAberto(false)}>Artigos</Link>
       </nav>
     </header>
