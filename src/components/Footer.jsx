@@ -13,14 +13,21 @@ export default function Footer() {
         </div>
 
             <div className="footer-coluna footer-info">
-                <a href="tel:+5514991234567"><FiPhone /> (43) 99100-1155</a>
-                <a href="tel:+5514987654321"><FiPhone /> (14) 3762-1411</a>
+                
+                <a href="tel:+5543991001155"><FiPhone /> (43) 99100-1155 - Londrina </a>
+                <a href="tel:+551437621411"><FiPhone /> (14) 3762-1411 - Taquarituba fixo </a>
+                <a href="tel:+5514998118954"><FiPhone /> (14) 99811-8954 - Taguai </a>
+                
                 <a href="https://api.whatsapp.com/send/?phone=5514991122334&text=Olá" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp /> (43) 99100-1155
+                    <FaWhatsapp /> (43) 99100-1155 - Londrina
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=5514988877665&text=Olá" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp /> (14) 99678-5523
+                <a href="https://api.whatsapp.com/send/?phone=5514996785523&text=Olá" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp />  (14) 99678-5523 - Taquarituba whatsapp
                 </a>
+                <a href="https://api.whatsapp.com/send/?phone=5514996785523&text=Olá" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp />  (14) 99678-5523 - Taquarituba whatsapp
+                </a>                
+                
                 <a href="mailto:contato@ferreiraramos.adv.br"><FiMail /> contato@ferreiraramos.adv.br</a>
             </div>
 
