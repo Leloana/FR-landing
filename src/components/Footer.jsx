@@ -22,10 +22,10 @@ export default function Footer() {
                     <FaWhatsapp /> (43) 99100-1155 - Londrina
                 </a>
                 <a href="https://api.whatsapp.com/send/?phone=5514996785523&text=Olá" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp />  (14) 99678-5523 - Taquarituba whatsapp
+                    <FaWhatsapp />  (14) 99678-5523 - Taquarituba
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=5514996785523&text=Olá" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp />  (14) 99678-5523 - Taquarituba whatsapp
+                <a href="https://api.whatsapp.com/send/?phone=5514998118954&text=Olá" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp />  (14) 99811-8954 - Taguai
                 </a>                
                 
                 <a href="mailto:contato@ferreiraramos.adv.br"><FiMail /> contato@ferreiraramos.adv.br</a>

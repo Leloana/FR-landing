@@ -47,6 +47,7 @@
 @media (max-width: 768px) {
   .artigo-unico-container {
     padding: 1rem;
+    text-align: justify;
   }
 
   .artigo-unico-container h1 {

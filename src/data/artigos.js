@@ -1,22 +1,22 @@
 export const artigos = [
   {
-    id: 'reforma-da-previdencia-impactos',
-    titulo: 'Reforma da Previdência: Impactos no Direito Previdenciário',
-    autores: ['Dra. Maria Ramos', 'Dr. João Ferreira'],
+    id: 'seguridade-social-aposentadoria-rural',
+    titulo: 'SEGURIDADE SOCIAL E APOSENTADORIA RURAL',
+    autores: ['Ana Carolina Ferreira de Almeida'],
     area: 'Direito Previdenciário',
     conteudo: "/artigos/teste1.txt"
   },
   {
-    id: 'guarda-compartilhada-e-direitos',
-    titulo: 'Guarda Compartilhada e os Direitos da Criança',
-    autores: ['Dra. Luciana Silva'],
-    area: 'Direito de Família',
+    id: 'aposentadoria-rural-feminina',
+    titulo: 'APLICAÇÃO DO PROTOCOLO Nº  429/2023 DO CNJ NA APOSENTADORIA RURAL FEMININA ',
+    autores: ['Ana Carolina Ferreira de Almeida'],
+    area: 'Direito Trabalhista',
     conteudo: `/artigos/teste2.txt`
   },
   {
-    id: 'vinculo-empregaticio-uber',
-    titulo: 'O Vínculo Empregatício dos Motoristas de Aplicativo',
-    autores: ['Dr. Carlos Andrade'],
+    id: 'genero-direito',
+    titulo: 'GÊNERO E DIREITO: CONCEITOS FUNDAMENTAIS',
+    autores: ['Ana Carolina Ferreira de Almeida'],
     area: 'Direito Trabalhista',
     conteudo: `/artigos/teste3.txt`
   },
