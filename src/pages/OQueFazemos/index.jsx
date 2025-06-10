@@ -26,9 +26,6 @@ export default function OqueFazemos() {
             
             <h2 className="oque-nome">
               {servico.titulo}
-              {(servico.id === 'previdenciario' || servico.id === 'trabalhista') && (
-                <span className="oque-destaque">Especialidade</span>
-              )}
             </h2>
             <hr className="oque-linha" />
             <ul className="oque-lista">
