@@ -1,6 +1,6 @@
 import './Equipe.css';
 import {  funcionarios, getImagem } from '../../data/funcionario';
-import logoPreto from '../../assets/logo-preto.png'
+import logoPreto from '../../assets/logo-preto.webp'
 
 export default function Equipe() {
   return (

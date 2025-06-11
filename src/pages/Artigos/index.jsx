@@ -1,7 +1,7 @@
 import './Artigos.css';
 import { artigos } from '../../data/artigos';
 import { Link } from 'react-router-dom';
-import logoPreto from '../../assets/logo-preto.png'
+import logoPreto from '../../assets/logo-preto.webp'
 export default function Artigos() {
   return (
     <div className="artigos-container">

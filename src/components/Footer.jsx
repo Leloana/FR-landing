@@ -1,5 +1,5 @@
 import './Footer.css'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.webp'
 import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 

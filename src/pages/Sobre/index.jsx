@@ -1,5 +1,5 @@
 import './Sobre.css'
-import sobreImg from '../../assets/fundadores.jpg' // troque para o caminho real da imagem
+import sobreImg from '../../assets/fundadores.webp' // troque para o caminho real da imagem
 
 export default function Sobre() {
   return (

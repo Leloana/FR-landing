@@ -1,5 +1,5 @@
 import './Info.css'
-import imagemEmpresa from '../../../assets/horizontal.png' // substitua pelo caminho correto
+import imagemEmpresa from '../../../assets/horizontal.webp' // substitua pelo caminho correto
 import BotaoWhatsapp from '../../../components/BotaoWhatsapp'
 
 export default function Info() {

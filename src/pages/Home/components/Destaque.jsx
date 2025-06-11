@@ -1,7 +1,7 @@
 import './Destaque.css';
 import BotaoWhatsapp from '../../../components/BotaoWhatsapp';
-import logoBranco from '../../../assets/logo-branco.png';
-import idosoImg from '../../../assets/idoso.png'; // <-- nova imagem importada
+import logoBranco from '../../../assets/logo-branco.webp';
+import idosoImg from '../../../assets/idoso.webp'; // <-- nova imagem importada
 
 export default function Destaque() {
   return (
