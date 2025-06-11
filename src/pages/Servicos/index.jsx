@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { servicos } from '../../data/servicos'
+import { servicos, getImagem } from '../../data/servicos'
 import BotaoWhatsapp from '../../components/BotaoWhatsapp'
 import { Link } from 'react-router-dom'
 import Destaque from './components/Destaque';  // Importando o componente Destaque
@@ -16,7 +16,7 @@ export default function PaginaServicos() {
   return (
     <div className="pagina-servico">
       <Destaque 
-        imagem={servico.caminhoFoto} 
+        imagem={getImagem(servico.caminhoFoto)} 
         titulo={servico.titulo} 
         descricao={servico.descricao} 
         mensagem={servico.mensagem}

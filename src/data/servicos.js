@@ -1,3 +1,8 @@
+const imagens = import.meta.glob('../assets/imagens/geral/*.png', {
+  eager: true,
+  import: 'default',
+});
+
 export const servicos = [
   {
     id: 'aposentadoria',
@@ -14,7 +19,7 @@ export const servicos = [
   Seja qual for sua situação, conte com uma equipe que entende o seu esforço e está preparada para defender seu direito ao descanso digno.
 
   Fale conosco e saiba como podemos ajudar.`,
-    caminhoFoto: '/imagens/geral/gem-1.png',
+    caminhoFoto: 'gem-1.png',
     textowhats: 'Quero orientação sobre aposentadoria',
     mensagem: 'Olá, gostaria de orientação sobre aposentadoria.'
   },
@@ -36,7 +41,7 @@ export const servicos = [
   Se você ou alguém da sua família precisa desse benefício, nós podemos ajudar em todas as etapas: da análise até a concessão.
 
   Entre em contato e tire suas dúvidas com um especialista.`,
-    caminhoFoto: '/imagens/geral/gem-2.png',
+    caminhoFoto: 'gem-2.png',
     textowhats: 'Quero orientação sobre BPC-LOAS',
     mensagem: 'Olá, gostaria de orientação sobre BPC-LOAS.'
   },
@@ -57,7 +62,7 @@ export const servicos = [
   O Auxílio-Reclusão não é um benefício pago ao preso, mas sim aos seus dependentes — filhos, cônjuge ou companheira(o). É essencial entender os requisitos legais para não perder esse direito.
 
   Fale conosco e tenha o suporte necessário para garantir a proteção da sua família.`,
-    caminhoFoto: '/imagens/geral/gem-n.png',
+    caminhoFoto: 'gem-n.png',
     textowhats: 'Quero orientação sobre Auxílio-Reclusão',
     mensagem: 'Olá, gostaria de orientação sobre Auxílio-Reclusão.'
   },
@@ -78,7 +83,7 @@ export const servicos = [
   Conte com uma equipe comprometida com a sua dignidade, segurança financeira e reabilitação profissional.
 
   Entre em contato e saiba como podemos te ajudar.`,
-    caminhoFoto: '/imagens/geral/gem-3.png',
+    caminhoFoto: 'gem-3.png',
     textowhats: 'Quero orientação sobre Auxílio-Acidente ou Doença',
     mensagem: 'Olá, gostaria de orientação sobre Auxílio-Acidente ou Doença.'
   },
@@ -100,7 +105,7 @@ export const servicos = [
   Nosso time está preparado para atuar com sensibilidade, agilidade e firmeza em todas as etapas do processo, garantindo seus direitos com o respeito e o cuidado que esse momento exige.
 
   Entre em contato e saiba como podemos ajudar.`,
-    caminhoFoto: '/imagens/geral/gem-4.png',
+    caminhoFoto: 'gem-4.png',
     textowhats: 'Quero orientação sobre Pensão por Morte',
     mensagem: 'Olá, gostaria de orientação sobre Pensão por Morte.'  
   },
@@ -122,9 +127,11 @@ export const servicos = [
   Se você desconfia que seu benefício foi concedido com valor inferior ao correto, entre em contato. Realizamos uma análise técnica completa para identificar se há possibilidade de revisão e qual o impacto financeiro estimado.
 
   Fale conosco e garanta o que é seu por direito.`,
-    caminhoFoto: '/imagens/geral/gem-5.png',
+    caminhoFoto: 'gem-5.png',
     textowhats: 'Quero orientação sobre Revisão de Aposentadorias',
     mensagem: 'Olá, gostaria de orientação sobre Revisão de Aposentadorias.'
   }
-
 ]
+
+export const getImagem = (nomeBase) =>
+  imagens[`../assets/imagens/geral/${nomeBase}`] || '';

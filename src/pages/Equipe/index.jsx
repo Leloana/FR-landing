@@ -1,5 +1,5 @@
 import './Equipe.css';
-import { funcionarios } from '../../data/funcionario';
+import {  funcionarios, getImagem } from '../../data/funcionario';
 import logoPreto from '../../assets/logo-preto.png'
 
 export default function Equipe() {
@@ -9,12 +9,13 @@ export default function Equipe() {
       <div className="equipe-grid">
         {funcionarios.map((pessoa) => (
           <a
-            href={`/perfil/${pessoa.id}`}
+            href={`/equipe/${pessoa.id}`}
             key={pessoa.id}
             className="equipe-card"
           >
+            
             <img
-              src={pessoa.caminhoFoto + ".jpg"}
+              src={getImagem(pessoa.caminhoFoto)}
               alt={pessoa.nome}
               className="equipe-imagem"
             />

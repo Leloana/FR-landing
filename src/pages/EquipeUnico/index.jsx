@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { funcionarios } from '../../data/funcionario';
+import { funcionarios, getImagemFull } from '../../data/funcionario';
 import { FaGraduationCap, FaQuoteLeft } from 'react-icons/fa';
 import './EquipeUnico.css';
 import BotaoWhatsapp from '../../components/BotaoWhatsapp';
@@ -18,7 +18,11 @@ export default function EquipeUnico() {
     <div className="equipe-unico-container">
       <h1>{pessoa.nome}</h1>
       <div className="equipe-unico-foto">
-        <img src={pessoa.caminhoFoto + "-full.jpg"} alt={pessoa.nome} />
+         <img
+          src={getImagemFull(pessoa.caminhoFoto)}
+          alt={pessoa.nome}
+          className="equipe-imagem-full"
+         />
       </div>
       <BotaoWhatsapp texto = {'Falar com '+ pessoa.nome} mensagem = {'Olá, gostaria de falar com ' + pessoa.nome}/>
       

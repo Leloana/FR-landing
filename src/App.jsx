@@ -25,7 +25,7 @@ export default function App() {
         <Route path="/servico/:servicoId" element={<Servicos />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/equipe" element={<Equipe />} />
-        <Route path="/perfil/:pessoaId" element={<EquipeUnico />} />
+        <Route path="/equipe/:pessoaId" element={<EquipeUnico />} />
         <Route path="/oque-fazemos" element={<OqueFazemos />} />
         <Route path="/artigos" element={<Artigos />} />
         <Route path="/artigos/:artigoId" element={<ArtigoUnico />} />
