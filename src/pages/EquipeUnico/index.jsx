@@ -3,6 +3,7 @@ import { funcionarios, getImagemFull } from '../../data/funcionario';
 import { FaGraduationCap, FaQuoteLeft } from 'react-icons/fa';
 import './EquipeUnico.css';
 import BotaoWhatsapp from '../../components/BotaoWhatsapp';
+import Imagem from '../../components/Imagem';
 
 export default function EquipeUnico() {
   const { pessoaId } = useParams(); // Obtém o ID da pessoa via URL
@@ -18,7 +19,7 @@ export default function EquipeUnico() {
     <div className="equipe-unico-container">
       <h1>{pessoa.nome}</h1>
       <div className="equipe-unico-foto">
-         <img
+         <Imagem
           src={getImagemFull(pessoa.caminhoFoto)}
           alt={pessoa.nome}
           className="equipe-imagem-full"
