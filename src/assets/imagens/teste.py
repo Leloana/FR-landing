@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-PASTA_IMAGENS = "geral"
+PASTA_IMAGENS = "equipe"
 PASTA_SAIDA = "imagens_otimizadas_webp"
 QUALIDADE = 85  # Qualidade entre 0 e 100
 
