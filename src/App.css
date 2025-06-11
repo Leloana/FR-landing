@@ -50,3 +50,12 @@ main {
 .read-the-docs {
   color: #888;
 }
+
+img[data-carregando="true"] {
+  filter: blur(10px);
+  transition: filter 0.5s ease;
+}
+
+img[data-carregando="false"] {
+  filter: blur(0);
+}
