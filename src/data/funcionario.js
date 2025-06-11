@@ -1,4 +1,4 @@
-const imagens = import.meta.glob('../assets/imagens/equipe/*.jpg', {
+const imagens = import.meta.glob('../assets/imagens/equipe/*.webp', {
   eager: true,
   import: 'default',
 });
@@ -79,7 +79,7 @@ export const funcionarios = [
 ];
 
 export const getImagem = (nomeBase) =>
-  imagens[`../assets/imagens/equipe/${nomeBase}.jpg`] || '';
+  imagens[`../assets/imagens/equipe/${nomeBase}.webp`] || '';
 
 export const getImagemFull = (nomeBase) =>
-  imagens[`../assets/imagens/equipe/${nomeBase}-full.jpg`] || '';
+  imagens[`../assets/imagens/equipe/${nomeBase}-full.webp`] || '';
